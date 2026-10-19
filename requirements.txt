@@ -1,0 +1,11 @@
+numpy
+pandas
+pyarrow
+matplotlib
+seaborn
+python-dotenv
+boto3
+scikit-learn
+sentence-transformers
+ipywidgets
+mlflow
