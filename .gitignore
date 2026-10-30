@@ -4,3 +4,5 @@ mlflow.db
 mlruns/
 mlartifacts/
 model/
+__pycache__/
+*.py[cod]

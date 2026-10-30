@@ -8,8 +8,9 @@ import streamlit as st
 from sentence_transformers import SentenceTransformer
 
 MODEL_DIR = "intfloat/multilingual-e5-small"
-CATALOG_PATH = Path("catalog.parquet")
-EMBEDDINGS_PATH = Path("embeddings.npy")
+APP_DATA_DIR = Path(__file__).resolve().parent / "artifacts" / "app"
+CATALOG_PATH = APP_DATA_DIR / "catalog.parquet"
+EMBEDDINGS_PATH = APP_DATA_DIR / "embeddings.npy"
 
 # Очистка запроса - та же, что в ноутбуке
 TAG_RE = re.compile(r"<[^>]+>")

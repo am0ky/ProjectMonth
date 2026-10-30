@@ -184,7 +184,7 @@
 
 Код трекинга подготовлен в ноутбуке. Он записывает параметры `method`, `eval_split`, `catalog_size`, `relevance_threshold`, модель, seed и настройки TF-IDF, все метрики с именами MLflow и артефакты `per_query_metrics.csv`, `summary.csv`, golden-сет, `metrics.png` и общий график сравнения конфигураций.
 
-`python check_mlflow.py semantic-search-project --env-file .env` - отрабатывает полностью и выводит ОК по всем пунктам.
+`python scripts/check_mlflow.py semantic-search-project --env-file .env` - отрабатывает полностью и выводит ОК по всем пунктам.
 
 ## 5. Финальная оценка и выводы для бизнеса
 

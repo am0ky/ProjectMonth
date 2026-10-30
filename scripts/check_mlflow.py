@@ -10,10 +10,10 @@
     MLFLOW_TRACKING_PASSWORD=secret
 
 Использование:
-    python check_mlflow.py wb-semantic-search
-    python check_mlflow.py wb-semantic-search --env-file ../.env
-    python check_mlflow.py wb-semantic-search --min-runs 3
-    python check_mlflow.py wb-semantic-search --metrics ndcg_at_10 mrr --params method eval_split
+    python scripts/check_mlflow.py wb-semantic-search
+    python scripts/check_mlflow.py wb-semantic-search --env-file ../.env
+    python scripts/check_mlflow.py wb-semantic-search --min-runs 3
+    python scripts/check_mlflow.py wb-semantic-search --metrics ndcg_at_10 mrr --params method eval_split
 
 Код возврата: 0 - всё в порядке, 1 - есть замечания, 2 - не удалось подключиться.
 """
