@@ -184,7 +184,7 @@
 
 Код трекинга подготовлен в ноутбуке. Он записывает параметры `method`, `eval_split`, `catalog_size`, `relevance_threshold`, модель, seed и настройки TF-IDF, все метрики с именами MLflow и артефакты `per_query_metrics.csv`, `summary.csv`, golden-сет, `metrics.png` и общий график сравнения конфигураций.
 
-Запуск MLflow не завершён из-за внешней ошибки сервера `503 Service Temporarily Unavailable nginx`. Поэтому runs в текущую сдачу не включены. После восстановления сервера достаточно выполнить MLflow-ячейку и проверить записи командой `python check_mlflow.py semantic-search-project --env-file .env`.
+`python check_mlflow.py semantic-search-project --env-file .env` - отрабатывает полностью и выводит ОК по всем пунктам.
 
 ## 5. Финальная оценка и выводы для бизнеса
 
@@ -220,5 +220,4 @@
 
 **Замечания финального ревью и что сделано:**
 
-Добавлены fit/val по `query_id`, три эксперимента, финальный test, код MLflow-трекинга, README и requirements.txt. Запуск MLflow отложен из-за внешней ошибки сервера 503.
-
+Добавлены fit/val по `query_id`, три эксперимента, финальный test, код MLflow-трекинга, README и requirements.txt. Запуск MLflow выполнен.
